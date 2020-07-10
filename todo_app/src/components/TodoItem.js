@@ -12,7 +12,7 @@ class TodoItem extends Component {
 
 // PropTypes
 TodoItem.propTypes = {
-    todo: PropTypes.array.isRequired
+    todo: PropTypes.object.isRequired
 }
 
 export default TodoItem;
