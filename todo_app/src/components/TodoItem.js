@@ -1,10 +1,18 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class TodoItem extends Component {
     render(){
         return(
-        <div>{this.props.todo.title}</div>
+        <div style={{ backgroundColor: '#f4f4f4'}}>
+            {this.props.todo.title}
+        </div>
     )};
 } 
+
+// PropTypes
+TodoItem.propTypes = {
+    todo: PropTypes.array.isRequired
+}
 
 export default TodoItem;
